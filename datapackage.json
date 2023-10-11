@@ -1,7 +1,7 @@
 {
   "bytes": 1456977,
   "count_of_rows": 10661,
-  "hash": "77b7b61bda99722e602c496bb9e956ac",
+  "hash": "006b0ceaf08b373f69086a6ac2c7a483",
   "profile": "data-package",
   "resources": [
     {
@@ -36,7 +36,7 @@
           {
             "format": "default",
             "name": "City",
-            "type": "any"
+            "type": "string"
           },
           {
             "decimalChar": ".",

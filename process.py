@@ -33,6 +33,7 @@ if __name__ == '__main__':
             'כתובת': 'address',
         }),
         DF.filter_rows(lambda r: 'קיים' in r['status']),
+        DF.set_type('City', type='string'),
         DF.add_field('coordinates', 'array', convert_coords),
         DF.add_field('Full Address', 'string', lambda r: "{address}, {City}".format(**r) if r['City'] else r['address']),
         DF.add_field('Location Name', 'string', location_name),
@@ -40,6 +41,7 @@ if __name__ == '__main__':
         DF.add_field('Lon', 'number', lambda r: r['coordinates'][0]),
         DF.select_fields(['Location Name', 'Full Address', 'City', 'Lat', 'Lon']),
         DF.update_resource(-1, name='shelters', path='shelters.csv'),
+        DF.validate(),
         DF.dump_to_path('.'),
         DF.printer(),
     ).process()
