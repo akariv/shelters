@@ -1,11 +1,11 @@
 {
-  "bytes": 1456977,
+  "bytes": 1608015,
   "count_of_rows": 10661,
-  "hash": "006b0ceaf08b373f69086a6ac2c7a483",
+  "hash": "4364c09a1f138f9c90a0721c0ec29bca",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 1456977,
+      "bytes": 1608015,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -17,7 +17,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "2eee515df25eeb70c547b669363d6d16",
+      "hash": "95f27424ee2686ae3b0c273b1c9c7dfe",
       "name": "shelters",
       "path": "shelters.csv",
       "profile": "tabular-data-resource",
@@ -50,6 +50,20 @@
             "format": "default",
             "groupChar": "",
             "name": "Lon",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "X",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Y",
             "type": "number"
           }
         ],

@@ -39,7 +39,7 @@ if __name__ == '__main__':
         DF.add_field('Location Name', 'string', location_name),
         DF.add_field('Lat', 'number', lambda r: r['coordinates'][1]),
         DF.add_field('Lon', 'number', lambda r: r['coordinates'][0]),
-        DF.select_fields(['Location Name', 'Full Address', 'City', 'Lat', 'Lon']),
+        DF.select_fields(['Location Name', 'Full Address', 'City', 'Lat', 'Lon', 'X', 'Y']),
         DF.update_resource(-1, name='shelters', path='shelters.csv'),
         DF.validate(),
         DF.dump_to_path('.'),
